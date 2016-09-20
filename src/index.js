@@ -1,6 +1,6 @@
 import React from 'react';
 import {render} from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import App from './App.js';
+import Routers from './Routers';
 
-render(<App />,document.getElementById('root'));
+render(<Routers />,document.getElementById('root'));

@@ -4,7 +4,8 @@ class App extends React.Component {
   render () {
     return(
       <div>
-          1234567890
+          APP页面
+          {this.props.children}
       </div>
     )
   }
