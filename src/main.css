@@ -1,3 +1,5 @@
+/*公共部分开始*/
+
 .mycontainer{
   display: flex;
   height: 100vh;
@@ -13,20 +15,30 @@
   flex-direction: column;
   font-size: 20px;
   color: #fff;
-  font-weight: 800;
+  /*font-weight: 800;*/
   text-align: center;
-  width: 200px;
+  width: 300px;
   background-color: #00bcd6;
 }
 .left-nav h3{
   font-weight: 800;
   padding: 20px 0;
   border-bottom: 3px solid #99CCCC;
+  margin-bottom: 0;
 }
 .left-nav a{
   padding: 20px 0;
   color: #fff;
   text-decoration: none;
+  text-align: left;
+  padding-left: 30px;
+  border-top: 5px solid #00bcd6;
+}
+.left-nav a:first-of-type{
+  border-top: none;
+}
+.left-nav a:hover{
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .left-nav span{
   padding-right: 5px;
@@ -86,4 +98,52 @@
 .content-main{
   flex-grow: 1;
   overflow-y: auto;
+  height: 100%;
+}
+/*公共部分结束*/
+
+/*Home页部分*/
+.home-container{
+ background-image: url(./images/1.jpg);
+ background-size: cover;
+ background-position: 50% 30%;
+ height: 100%;
+}
+.home-cover h2,.home-cover p{
+  color: #fff;
+  font-weight: 800;
+}
+.home-cover h2{
+  font-size: 38px;
+}
+.home-cover p{
+  font-size: 20px;
+  margin: 30px 0;
+  text-shadow: 2px 2px 3px #666;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+.home-cover{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*flex-grow: 1;*/
+  height: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.home-cover h2>span{
+  color:#66CC00;
+  font-size: 42px;
+  text-shadow: 2px 2px 3px #CC9900;
+}
+.home-cover>span{
+  font-size: 24px;
+  background-image :linear-gradient(orange,#993300);
+  padding:10px 15px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 800;
+  cursor: pointer;
 }
