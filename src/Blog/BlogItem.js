@@ -29,7 +29,7 @@ class BlogItem extends React.Component {
       }
     });
     return(
-      <div>
+      <div style={{width:"90%",margin:"0 auto"}}>
          <div dangerouslySetInnerHTML={{__html: content}} />
       </div>
     )

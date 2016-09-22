@@ -150,3 +150,36 @@ body{
   font-weight: 800;
   cursor: pointer;
 }
+/*Home页面结束*/
+
+/*Work页面开始*/
+.work-container{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: auto;
+}
+.work-card{
+  display: flex;
+  align-items: flex-end;
+  color:#ff0;
+  font-size: 20px;
+  margin: 0 auto;
+  width:80%;
+  margin-top: 30px;
+  flex-grow: 1;
+}
+.work-card1{
+    background: url(./images/EagleTroop.png) no-repeat;
+    background-size: 100% 100%;
+}
+.work-card2{
+    background: url(./images/PC.jpg) no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+.work-card h3{
+  margin:0 10px;
+}
+.work-card p{
+  margin:0;
+}

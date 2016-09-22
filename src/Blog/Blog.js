@@ -12,10 +12,9 @@ class Blog extends React.Component {
       data:[]
     }
   }
-  componentDidMount(){
+  componentWillMount(){
     getBlogData()
       .then((data) => {
-
         this.setState({
           data:data.data,
           wait:false
