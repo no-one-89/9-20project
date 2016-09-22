@@ -38,11 +38,11 @@ class App extends React.Component {
   render () {
     return(
       <div className="mycontainer">
-        {this.state.showNav ? <NavHeader /> : <LeftNav title={this.state.title}/>}
+        {this.state.showNav ? <NavHeader  title={this.state.title}/> : <LeftNav title={this.state.title}/>}
           <div className="content-main">
             {this.props.children}
           </div>
-        {this.state.showNav ? <NavFooter title={this.state.title}/> : null}
+        {this.state.showNav ? <NavFooter/> : null}
 
       </div>
     )

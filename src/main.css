@@ -1,5 +1,7 @@
 /*公共部分开始*/
-
+body{
+  /*font-family: "微软雅黑"*/
+}
 .mycontainer{
   display: flex;
   height: 100vh;
@@ -15,9 +17,10 @@
   flex-direction: column;
   font-size: 20px;
   color: #fff;
+  flex-shrink: 0;
   /*font-weight: 800;*/
   text-align: center;
-  width: 300px;
+  width: 240px;
   background-color: #00bcd6;
 }
 .left-nav h3{
