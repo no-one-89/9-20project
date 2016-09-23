@@ -59,8 +59,10 @@
     "bootstrap": "^3.3.7",
     "highlight.js": "^9.7.0",
     "marked": "^0.3.6",
+    "material-ui": "^0.15.4",
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
-    "react-router": "^2.8.1"
+    "react-router": "^2.8.1",
+    "react-tap-event-plugin": "^1.0.0"
   }
 }
