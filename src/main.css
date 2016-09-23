@@ -155,19 +155,28 @@ body{
 /*Work页面开始*/
 .work-container{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   height: 100%;
   overflow-y: auto;
+  flex-wrap: wrap;
 }
+
 .work-card{
   display: flex;
   align-items: flex-end;
   color:#ff0;
   font-size: 20px;
-  margin: 0 auto;
+  justify-content: center;
   width:80%;
   margin-top: 30px;
-  flex-grow: 1;
+  height:30vw;
+
+  flex-shrink: 0;
+}
+@media (min-width:800px) {
+  .work-card{
+    width: 40%;
+  }
 }
 .work-card1{
     background: url(./images/EagleTroop.png) no-repeat;
