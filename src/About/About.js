@@ -37,7 +37,6 @@ class About extends React.Component {
     </div>
     )
 
-    // let content = progress
     marked.setOptions({
     highlight: function (code) {
         return hljs.highlightAuto(code).value;
