@@ -169,33 +169,34 @@ body{
 
 .work-card{
   display: flex;
-  align-items: flex-end;
-  color:#ff0;
+  flex-direction: column;
   font-size: 20px;
-  justify-content: center;
+  /*justify-content: center;*/
   width:80%;
   margin-top: 30px;
-  height:30vw;
-  margin-right: 30px;
-  margin-left: 30px;
-  flex-shrink: 0;
+  margin-right: 3vw;
+  margin-left: 3vw;
+  flex-shrink: 1;
 }
-@media (min-width:800px) {
+@media (min-width:760px) {
   .work-card{
     width: 40%;
+    height:30vw;
+    flex-shrink: 0;
   }
 }
-.work-card1{
-    background: url(./images/EagleTroop.png) no-repeat;
-    background-size: 100% 100%;
+.work-card div{
+  flex-grow: 1;
 }
-.work-card2{
-    background: url(./images/PC.jpg) no-repeat 100% 100%;
-    background-size: 100% 100%;
+.work-card .work-content{
+  background-color: #ccc;
+  flex-grow: 0;
+  padding: 8px 10px;
 }
-.work-card h3{
-  margin:0 10px;
+.work-card .work-content span{
+  font-size: 16px;
 }
-.work-card p{
-  margin:0;
+.work-card img{
+  width:100%;
+  height:100%;
 }

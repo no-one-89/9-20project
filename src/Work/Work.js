@@ -1,25 +1,25 @@
 import React from 'react'
-
+import WorkCard from '../components/WorkCard'
 class Work extends React.Component {
   render () {
     return(
       <div className="work-container">
-        <div className="work-card work-card1">
-          <h3>作品一</h3>
-          <p>2016.09.02</p>
-        </div>
-        <div className="work-card work-card2">
-          <h3>作品二</h3>
-          <p>2016.09.15</p>
-        </div>
-        <div className="work-card work-card1">
-          <h3>作品三</h3>
-          <p>2016.09.15</p>
-        </div>
-        <div className="work-card work-card2">
-          <h3>作品四</h3>
-          <p>2016.09.15</p>
-        </div>
+        <WorkCard src={"https://github.com/no-one-89/9-20project--template/blob/master/sources/pjzs.png?raw=true"}
+        title={'作品一：品匠装饰'}
+        date={'2016/05/09'}
+        href={'http://www.qhdpjzs.com/'} />
+        <WorkCard src={"https://github.com/no-one-89/9-20project--template/blob/master/sources/mozan.png?raw=true"}
+        title={'作品二：魔赞'}
+        date={'2016/08/10'}
+        href={'http://morethan.cc/index.php?c=index&a=index'} />
+        <WorkCard src={"https://github.com/no-one-89/9-20project--template/blob/master/src/images/PC.jpg?raw=true"}
+        title={'作品三：Codester'}
+        date={'2016/07/09'}
+        href={'#'} />
+        <WorkCard src={"https://github.com/no-one-89/9-20project--template/blob/master/src/images/EagleTroop.png?raw=true"}
+        title={'作品四：EagleTroop'}
+        date={'2016/06/21'}
+        href={'#'} />
       </div>
     )
   }
