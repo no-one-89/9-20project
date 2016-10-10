@@ -7,7 +7,7 @@ class Home extends React.Component {
   render () {
     return(
       <div className="home-container modbr">
-        <video autoPlay loop poster="../sources/11.png" id="bgvid">
+        <video autoPlay loop poster="https://github.com/no-one-89/9-20project--template/blob/master/sources/11.png?raw=true" id="bgvid">
           <source src="https://s3.amazonaws.com/cloudways-website-videos/2016-home-v3.mp4" type="video/mp4" />
         </video>
         <div className="home-cover">
