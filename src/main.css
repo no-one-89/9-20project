@@ -113,11 +113,21 @@ body{
 
 /*Home页部分*/
 .home-container{
- background-image: url(./images/1.jpg);
- background-size: cover;
+  position: relative;
+  /*background: url(../sources/11.png) no-repeat;*/
+  background-size: cover;
  background-position: 50% 30%;
  height: 100%;
+ overflow: hidden;
 }
+#bgvid {
+ position: absolute;
+ min-width: 100%; min-height: 100%;
+ width: auto;
+height: auto;
+z-index: -100;
+  background-size: cover;
+ }
 .home-cover h2,.home-cover p{
   color: #fff;
   font-weight: 800;
@@ -140,7 +150,7 @@ body{
   height: 100%;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .home-cover h2>span{
   color:#66CC00;
