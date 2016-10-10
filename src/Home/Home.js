@@ -1,8 +1,9 @@
 import React from 'react'
 import { hashHistory } from 'react-router'
+
 class Home extends React.Component {
   handleClick(){
-    hashHistory.push('about')
+    hashHistory.push('about/')
   }
   render () {
     return(
